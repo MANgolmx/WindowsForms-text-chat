@@ -32,17 +32,19 @@
             this.textBoxIP = new System.Windows.Forms.TextBox();
             this.textBoxChat = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxMassage = new System.Windows.Forms.TextBox();
             this.textBoxPort = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(41, 390);
+            this.buttonSend.Location = new System.Drawing.Point(41, 402);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(75, 23);
             this.buttonSend.TabIndex = 0;
             this.buttonSend.Text = "Send";
             this.buttonSend.UseVisualStyleBackColor = true;
+            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
             // 
             // textBoxIP
             // 
@@ -61,17 +63,24 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(41, 364);
+            this.textBoxName.Location = new System.Drawing.Point(41, 355);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 3;
+            // 
+            // textBoxMassage
+            // 
+            this.textBoxMassage.Location = new System.Drawing.Point(159, 354);
+            this.textBoxMassage.Name = "textBoxMassage";
+            this.textBoxMassage.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMassage.TabIndex = 5;
             // 
             // textBoxPort
             // 
             this.textBoxPort.Location = new System.Drawing.Point(148, 28);
             this.textBoxPort.Name = "textBoxPort";
             this.textBoxPort.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPort.TabIndex = 4;
+            this.textBoxPort.TabIndex = 6;
             // 
             // Form1
             // 
@@ -79,6 +88,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.textBoxPort);
+            this.Controls.Add(this.textBoxMassage);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.textBoxChat);
             this.Controls.Add(this.textBoxIP);
@@ -96,6 +106,7 @@
         private System.Windows.Forms.TextBox textBoxIP;
         private System.Windows.Forms.TextBox textBoxChat;
         private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxMassage;
         private System.Windows.Forms.TextBox textBoxPort;
     }
 }
